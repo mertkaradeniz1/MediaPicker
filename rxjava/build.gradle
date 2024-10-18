@@ -23,7 +23,7 @@ android {
         versionCode 1
         versionName "1.0"
     }
-
+    namespace 'net.alhazmy13.mediapicker.rxjava'
     buildTypes {
         release {
             minifyEnabled false
