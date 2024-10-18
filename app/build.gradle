@@ -2,11 +2,11 @@ apply plugin: 'com.android.application'
 //apply from: '../deps.gradle'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 28
+        targetSdkVersion 30
         applicationId 'net.alhazmy13.mediapickerexample'
         versionCode 1
         versionName "1.0"
@@ -21,6 +21,11 @@ android {
 
     lintOptions {
         abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11 // veya daha yüksek
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
